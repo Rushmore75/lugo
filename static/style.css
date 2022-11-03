@@ -1,25 +1,58 @@
 body {
-	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+	font-family: sans-serif;
+	background: rgb(71, 71, 71);
+	color: black;
 }
 
 main {
-	max-width: 800px ;
-	margin: auto ;
-}
-
-img {
-	max-width: 100% ;
+	max-width: 60%;
+	margin: auto;
 }
 
 header h1 {
-	text-align: center ;
+	text-align: center;
+	color: white;
 }
 
+a:link {
+	color: rgb(126, 249, 255);
+}
+a:visited {
+	color: white;
+}
+
+article {
+	background-color: burlywood;
+	outline: cadetblue solid 5px;
+	padding: 3%;
+	border-radius: 10px;
+}
+
+pre {
+	/*
+	This has to be flagged important because somewhere in hugo a style
+	is being directly applied to pre blocks. Ill have to find it later.
+	 */
+	background-color: rgb(59, 59, 59) !important;
+	padding: 10px;
+	border-radius: 8px;
+	outline: cadetblue solid 3px;
+}
+code {
+	font-size: large;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+
 footer {
-	text-align: center ;
-	clear: both ;
+	padding-top: 1%;
+	text-align: center;
+	clear: both;
 }
 
 /* For TAGLIST.HTML */
