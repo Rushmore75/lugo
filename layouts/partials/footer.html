@@ -1,7 +1,12 @@
 <hr>
 <footer>
-    Fund the web dev in XMR:
-    <p id="xmr" class="copy">wallet address here</p>
+    <p id="xmr" class="copy" onclick="copy()">wallet address here</p>
 	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
 	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
 </footer>
+<script>
+    function copy() {
+        let copyText = document.getElementById("xmr");
+        navigator.clipboard.writeText(copyText.innerText);
+    }
+</script>
