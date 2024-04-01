@@ -1,5 +1,17 @@
+:root {
+    --bg: #222222;
+    --bg-text: #606060;
+    --text: #ffffff;
+    --header: #454545;
+    --header-text: #707070;
+    --content-bg: #303030;
+    --accent: #344a70;
+    --link: #3e765d;
+    --radius: 0.75rem;
+}
+
 .copy:hover {
-    color: #344a70;
+    color: var(--accent);
 }
 
 ::-webkit-scrollbar {
@@ -7,15 +19,15 @@
 }
 
 body {
-    background-color: #222222;
-    color: #ffffff;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: x-large;
 }
 
 header {
-    background-color: #344a70;
+    background-color: var(--accent);
     margin-top: 0;
     margin-left: 0;
     text-align: center;
@@ -24,12 +36,14 @@ header {
 }
 
 .article-header {
-    background-color: #454545;
-    color: #707070;
+    background-color: var(--header);
+    color: var(--header-text);
+}
+
+section {
+    border-radius: var(--radius);
     margin: 2rem;
-    margin-bottom: 0;
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .spaced {
@@ -38,37 +52,36 @@ header {
 }
 
 article {
-    background-color: #303030;
+    background-color: var(--content-bg);
     padding: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
     text-align: left;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5em;
 }
 
 hr {
     margin: 2rem;
     height: 1px;
     border: 0;
-    border-top: 1px solid #454545;
+    border-top: 1px solid var(--header);
     height: 1px;
 }
 
 footer {
-    color: #606060;
+    color: var(--bg-text);
     text-align: center;
 }
 
 p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 0;
+    margin: 1rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    margin: 0;
+    margin: 1rem;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
 }
 
 article h1 {
@@ -76,11 +89,11 @@ article h1 {
 }
 
 a {
-    color: #3e765d;
+    color: var(--link);
 }
 
 a:hover {
-    color: #344a70;
+    color: var(--accent);
     text-decoration-line: none;
 }
 
@@ -97,10 +110,9 @@ header a:hover {
 
 main {
     max-width: 80%;
-    margin: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
 main {
     max-width: 100%;
     margin: auto;

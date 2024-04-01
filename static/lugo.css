@@ -1,4 +1,4 @@
-
+/* Shortcode css*/
 /* For NEXTPREV.HTML */
 #nextprev {
 	/* The container for both the previous and next articles. */
@@ -44,3 +44,20 @@
 	float: right;
 }
 
+figure {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+
+figcaption {
+	color: var(--bg-text);
+}
+
+img {
+	max-width: 100%;
+	max-height: 50vh;
+	border-radius: var(--radius);
+}
