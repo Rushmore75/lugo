@@ -6,6 +6,7 @@
     {{ partial "header.html" . }}
     {{ end }}
     <main>
+        <section>
         <div class="article-header">
             <h3 class="spaced">
                 {{ .Page.Title }}
@@ -16,6 +17,7 @@
             {{ .Content }}
             {{ end }}
         </article>
+        </section>
         {{ block "footer" . }}
         {{ partial "footer.html" . }}
         {{ end }}
