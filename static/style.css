@@ -12,6 +12,7 @@
 
 .copy:hover {
     color: var(--accent);
+    cursor: copy;
 }
 
 ::-webkit-scrollbar {
