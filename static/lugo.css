@@ -27,7 +27,7 @@
 .taglist {
 	text-align: center;
 	clear: both;
-	color: rgb(64, 64, 64);
+	color: var(--bg-text);
 }
 
 /* For putting right / left boxes next to each other */
