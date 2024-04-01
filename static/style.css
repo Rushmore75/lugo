@@ -8,6 +8,34 @@
     --accent: #344a70;
     --link: #3e765d;
     --radius: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+blockquote {
+    background-color: var(--header);
+    /* border-radius: var(--radius); */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* blockquote~blockquote {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+blockquote+blockquote {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+} */
+
+pre {
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: var(--radius);
 }
 
 .copy:hover {
@@ -22,17 +50,13 @@
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: x-large;
 }
 
 header {
     background-color: var(--accent);
-    margin-top: 0;
-    margin-left: 0;
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.5rem;
     font-size: xx-large;
 }
 
@@ -71,10 +95,6 @@ footer {
     text-align: center;
 }
 
-p {
-    margin: 1rem;
-}
-
 h1,h2,h3,h4,h5,h6 {
     margin: 1rem;
     text-align: center;
@@ -111,6 +131,7 @@ header a:hover {
 
 main {
     max-width: 80%;
+    margin: auto;
 }
 
 @media screen and (max-width: 1500px) {
