@@ -61,3 +61,7 @@ img {
 	max-height: 50vh;
 	border-radius: var(--radius);
 }
+
+.rss {
+	border-radius: 0.25rem;
+}
