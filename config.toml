@@ -1,6 +1,6 @@
 title = "Website Name"
 baseURL = 'https://example.org'
-languageCode = 'en-us'
+languageCode = 'en_US'
 enableRobotsTXT = true
 
 [params]
