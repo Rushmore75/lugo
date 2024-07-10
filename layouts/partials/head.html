@@ -14,7 +14,8 @@
 <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
 <meta property="og:type" content='{{ if .IsHome }}{{ "website" }}{{ else }}{{ "article" }}{{ end }}'>
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
-<meta property="og:image" content="<page-image-url>">
+<meta property="og:url" content="{{ .Page.Permalink }}">
+<meta property="og:image" content="{{ .Page.Permalink }}qr.png">
 {{ if isset .Params "tags" }}
 <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . " , " }}{{ end }}">
 {{ end -}}
